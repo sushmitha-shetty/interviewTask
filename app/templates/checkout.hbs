@@ -1,0 +1,105 @@
+{{cart-header}}
+<div id="wrapper" class="container">
+  {{logo-section}}
+  <br>    
+  <section class="header_text sub">
+    <h4><span>Check Out</span></h4>
+  </section>  
+  <section class="main-content">
+    <div class="row">
+      <div class="span12">
+        <div class="accordion" id="accordion2">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Account &amp; Billing Details</a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+                <div class="row-fluid">
+                  <div class="span6">
+                    <h4>Your Personal Details</h4>
+                    <div class="control-group">
+                      <label class="control-label">First Name</label>
+                      <div class="controls">
+                        <input type="text" placeholder="" class="input-xlarge">
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label">Last Name</label>
+                      <div class="controls">
+                        <input type="text" placeholder="" class="input-xlarge">
+                      </div>
+                    </div>            
+                    <div class="control-group">
+                      <label class="control-label">Email Address</label>
+                      <div class="controls">
+                        <input type="text" placeholder="" class="input-xlarge">
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label">Mobile No.</label>
+                      <div class="controls">
+                        <input type="text" placeholder="" class="input-xlarge">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="span6">
+                    <h4>Your Address</h4> 
+                    <div class="control-group">
+                      <label class="control-label">Address 1:</label>
+                      <div class="controls">
+                        <input type="text" placeholder="" class="input-xlarge">
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label">Address 2:</label>
+                      <div class="controls">
+                        <input type="text" placeholder="" class="input-xlarge">
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label">City:</label>
+                      <div class="controls">
+                        <input type="text" placeholder="" class="input-xlarge">
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label">Post Code:</label>
+                      <div class="controls">
+                        <input type="text" placeholder="" class="input-xlarge">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="buttons center">
+                    <!-- <button class="btn btn-inverse" type="submit" id="checkout">
+                      {{#link-to 'checkout'}}Checkout{{/link-to}}
+                    </button> -->
+                    <button class="tn btn-inverse" data-toggle="modal" data-target="#myModal">Checkout</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Your Order succesfully placed.</p>
+          </div>          
+        </div>
+
+      </div>
+    </div>
+
+  </section>      
+  {{cart-footer}}
+</div>
