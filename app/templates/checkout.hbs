@@ -4,7 +4,9 @@
   <br>    
   <section class="header_text sub">
     <h4><span>Check Out</span></h4>
-  </section>  
+  </section>
+  
+  
   <section class="main-content">
     <div class="row">
       <div class="span12">
@@ -21,25 +23,25 @@
                     <div class="control-group">
                       <label class="control-label">First Name</label>
                       <div class="controls">
-                        <input type="text" placeholder="" class="input-xlarge">
+                        {{input class="input-xlarge" type="text" placeholder="First Name"}}
                       </div>
                     </div>
                     <div class="control-group">
                       <label class="control-label">Last Name</label>
                       <div class="controls">
-                        <input type="text" placeholder="" class="input-xlarge">
+                        {{input class="input-xlarge" type="text" placeholder="Last Name"}}
                       </div>
                     </div>            
                     <div class="control-group">
                       <label class="control-label">Email Address</label>
                       <div class="controls">
-                        <input type="text" placeholder="" class="input-xlarge">
+                        {{input class="input-xlarge" type="text" placeholder="Email Address"}}
                       </div>
                     </div>
                     <div class="control-group">
                       <label class="control-label">Mobile No.</label>
                       <div class="controls">
-                        <input type="text" placeholder="" class="input-xlarge">
+                        {{input class="input-xlarge" type="text" placeholder="Mobile No."}}
                       </div>
                     </div>
                   </div>
@@ -48,25 +50,23 @@
                     <div class="control-group">
                       <label class="control-label">Address 1:</label>
                       <div class="controls">
-                        <input type="text" placeholder="" class="input-xlarge">
+                        {{input class="input-xlarge" type="text" placeholder="Address"}}
                       </div>
                     </div>
                     <div class="control-group">
                       <label class="control-label">Address 2:</label>
                       <div class="controls">
-                        <input type="text" placeholder="" class="input-xlarge">
+                        {{input class="input-xlarge" type="text" placeholder="Address"}}
                       </div>
                     </div>
                     <div class="control-group">
                       <label class="control-label">City:</label>
-                      <div class="controls">
-                        <input type="text" placeholder="" class="input-xlarge">
-                      </div>
+                      {{gmap-search city=city}}                      
                     </div>
                     <div class="control-group">
                       <label class="control-label">Post Code:</label>
                       <div class="controls">
-                        <input type="text" placeholder="" class="input-xlarge">
+                        {{input class="input-xlarge" type="text" placeholder="Postal Code"}}
                       </div>
                     </div>
                   </div>
