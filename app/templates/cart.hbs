@@ -9,8 +9,8 @@
   			<table class="table table-striped">
   				<thead>
   					<tr>
-  						<!-- <th>Remove</th> -->
-  						<th style="text-align: center">Item</th>
+  						<th>Remove</th>
+  						<th>Item</th>
   						<th>Product Name</th>
   						<th>Total</th>
   					</tr>
@@ -18,7 +18,7 @@
   				<tbody>
             {{#each model as |item|}}
               <tr>
-                <!-- <td><input type="checkbox" value="option1" {{action "removeItem" item}}></td> -->
+                <td><input type="checkbox" value="option1" {{action "removeItem" item}}></td>
                 <td><img alt="" src={{item.image}}></td>
                 <td>{{item.description}}</td>
                 <td>₹{{item.price}}</td>
@@ -26,7 +26,8 @@
             {{/each}}
   					<tr>
   						<td>&nbsp;</td>
-  						<td>&nbsp;</td>
+              <td>&nbsp;</td>
+  						<td>Total Ammount:</td>
   						<td><strong>{{totalPrice}}</strong></td>
   					</tr>		  
   				</tbody>
@@ -39,7 +40,7 @@
   			</p>
       {{else}}
         <section class="header_text">
-          Your cart is empty.
+          Your Shopping Cart is empty.
         </section>
       {{/if}}				
 		</div>

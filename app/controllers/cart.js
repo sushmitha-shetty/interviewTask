@@ -6,9 +6,9 @@ export default Controller.extend({
   shoppingCart: service(),
 
   actions: {
-    /*removeItem(item) {
+    removeItem(item) {
       let shopCart = Ember.get(this, 'shoppingCart');
       shopCart.remove(item);
-    }*/
+    }
   }
 });

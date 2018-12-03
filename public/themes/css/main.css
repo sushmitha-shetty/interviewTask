@@ -19,6 +19,25 @@ div:hover{
 	color:#fd4004;
 	text-decoration:none;
 }
+.pac-container {
+  background-color: whitesmoke !important;
+}
+
+#flashIn, #flashOut{
+  display:none; 
+  background-color:#fff; 
+  color:#eb4800;
+  position: fixed;
+  width: 180px;
+  top: 7%;
+  z-index: 1;
+  padding: 20px 30px;
+  margin-left: 30%;
+  border: 1px solid #999;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 10px;
+  box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+}
 .left{
 	text-align:left !important;
 }
@@ -560,8 +579,7 @@ section.our_client .row{
 div:hover{
 	background-color: transparent;
 	color:#eb4800;
-	text-shadow: none;	
-	font-weight: bold;
+	text-shadow: none;
 }
 
 /* Toogle Menu
