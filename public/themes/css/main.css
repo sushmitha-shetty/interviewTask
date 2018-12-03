@@ -23,6 +23,22 @@ div:hover{
   background-color: whitesmoke !important;
 }
 
+.success {
+  font-style: italic;
+  font-size: 14pt;
+  text-align: center;
+  color: teal;
+}
+
+.delivery {
+  font-size: 10pt;
+}
+
+.delivaryAddress {
+  color: initial;
+  font-style: italic;
+}
+
 #flashIn, #flashOut{
   display:none; 
   background-color:#fff; 
