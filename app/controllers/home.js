@@ -7,6 +7,7 @@ export default Controller.extend({
   //will load the service in file /app/services/shopping-cart.js
   //shoppingCart: service(),
   shoppingCart: Ember.inject.service('shopping-cart'),
+  cartLength: null,
   actions: {
     addToCart(val) {
       let shopCart = Ember.get(this, 'shoppingCart');      
@@ -19,6 +20,7 @@ export default Controller.extend({
         $('#flashIn').delay(100).fadeIn('normal', function() {
           $(this).delay(1000).fadeOut();
         });
+        this.set('cartLength', shopCart.get('items').length);
       } else {
         $('#flashOut').delay(100).fadeIn('normal', function() {
           $(this).delay(1000).fadeOut();

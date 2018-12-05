@@ -1,27 +1,24 @@
-{{cart-header cartList=shoppingCart}}
+{{cart-header cartLength=cartLength}}
 <div id="wrapper" class="container">
   {{logo-section}}
   <br>
   <div id="flashIn">Item added to your cart.</div>
   <div id="flashOut">Item already added to your cart.</div>
-  <section class="main-content">
-    <div>   
-      <ul class="thumbnails listing-products">
-        {{#each model as |item|}}
-          <li class="span4">
-            <div class="product-box">
-              <span class="sale_tag"></span>                        
-              <img alt="" src={{item.image}}><br/>
-              <div class="title">{{item.description}}</div><br/>
-              <div class="category">{{item.category}}</div>
-              <p class="price">₹{{item.price}}</p>
-              <div class="acart" {{action "addToCart" item}}>Add to Cart</div>
-            </div>
-          </li>
-        {{/each}}       
-      </ul>               
-      <hr>
-    </div>
+  <section class="main-content">  
+    <ul class="thumbnails listing-products">
+      {{#each model as |item|}}
+        <li class="span4">
+          <div class="product-box">                                 
+            <img alt="" src={{item.image}}><br/>
+            <div class="title">{{item.description}}</div><br/>
+            <div class="category">{{item.category}}</div>
+            <p class="price">₹{{item.price}}</p>
+            <div class="acart" {{action "addToCart" item}}>Add to Cart</div>
+          </div>
+        </li>
+      {{/each}}       
+    </ul>               
+    <hr>
   </section>
   {{cart-footer}}
 </div>

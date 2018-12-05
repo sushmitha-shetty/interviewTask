@@ -3,7 +3,13 @@
 		<div class="account pull-right">
 			<ul class="user-menu">
 				<li>{{#link-to 'home'}}Home{{/link-to}}</li>
-        <li>{{#link-to 'cart'}}My Cart{{/link-to}}</li>
+        		<li>{{#link-to 'cart'}}
+        		  {{#if cartLength}}
+        		    My Cart ({{cartLength}})
+        		  {{else}}
+        		    My Cart
+        		  {{/if}}
+        		{{/link-to}}</li>
 			</ul>
 		</div>
 	</div>

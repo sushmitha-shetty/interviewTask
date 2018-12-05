@@ -2,48 +2,47 @@
 <div id="wrapper" class="container">
 	{{logo-section}}
 	<br>
-	<section class="main-content">				
-		<div>				
-			<h4 class="title"><span class="text"><strong>My</strong>Cart</span></h4>
-      {{#if model}}
-  			<table class="table table-striped">
-  				<thead>
-  					<tr>
-  						<th>Remove</th>
-  						<th>Item</th>
-  						<th>Product Name</th>
-  						<th>Total</th>
-  					</tr>
-  				</thead>
-  				<tbody>
-            {{#each model as |item|}}
-              <tr>
-                <td><input type="checkbox" value="option1" {{action "removeItem" item}}></td>
-                <td><img alt="" src={{item.image}}></td>
-                <td>{{item.description}}</td>
-                <td>₹{{item.price}}</td>
-              </tr>
-            {{/each}}
-  					<tr>
-  						<td>&nbsp;</td>
-              <td>&nbsp;</td>
-  						<td>Total Ammount:</td>
-  						<td><strong>{{totalPrice}}</strong></td>
-  					</tr>		  
-  				</tbody>
-  			</table>				
-  			<hr/>
-  			<p class="buttons center">
-  				<button class="btn btn-inverse" type="submit" id="checkout">
-            {{#link-to 'checkout'}}Checkout{{/link-to}}
-          </button>
-  			</p>
-      {{else}}
-        <section class="header_text">
-          Your Shopping Cart is empty.
-        </section>
-      {{/if}}				
-		</div>
+	<section class="main-content">						
+		<h4 class="title"><span class="text"><strong>My</strong>Cart</span></h4>
+    {{#if model}}
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Remove</th>
+						<th>Item</th>
+						<th>Product Name</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+          {{#each model as |item|}}
+            <tr>
+              <td><input type="checkbox" value="option1" {{action "removeItem" item}}></td>
+              <td><img alt="" src={{item.image}}></td>
+              <td>{{item.description}}</td>
+              <td>₹{{item.price}}</td>
+            </tr>
+          {{/each}}
+					<tr>
+						<td>&nbsp;</td>
+            <td>&nbsp;</td>
+						<td>Total Ammount:</td>
+						<td><strong>{{totalPrice}}</strong></td>
+					</tr>		  
+				</tbody>
+			</table>				
+			<hr/>
+			<p class="buttons center">
+				<button class="btn btn-inverse" type="submit" id="checkout">
+          {{#link-to 'checkout'}}Checkout{{/link-to}}
+        </button>
+			</p>
+    {{else}}
+      <section class="header_text">
+        Your Shopping Cart is empty.
+      </section>
+    {{/if}}				
+	
 	</section>			
 	{{cart-footer}}
 </div>

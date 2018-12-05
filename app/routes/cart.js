@@ -18,6 +18,4 @@ export default Route.extend({
     });
     controller.set('totalPrice', total);
 	}
-    
-
 });

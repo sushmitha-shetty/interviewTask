@@ -15,10 +15,7 @@ label, input, button, select, textarea{
 div{
 	color:#eb4800;
 }
-div:hover{
-	color:#fd4004;
-	text-decoration:none;
-}
+
 .pac-container {
   background-color: whitesmoke !important;
 }
@@ -66,20 +63,7 @@ div:hover{
 .myCarousel.carousel{
 	margin-bottom:0;
 }
-.breadcrumb{
-	margin:10px -10px 20px -10px;
-	background-color:#ddd;
-}
-.breadcrumb{
-	background:none;
-}
-.breadcrumb li{
-	border:0px solid #ddd;
-	border-radius:30px;
-	padding:2px 15px 2px 10px;
-	background-color:#ddd;
-	margin-right:-23px;
-}
+
 .accordion .accordion-heading {
 	background-color: #eee;
 }
@@ -91,8 +75,6 @@ div:hover{
 	background: #fff;
 	margin: 20px auto 20px auto;
 	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
 	padding:0px 10px;
 }
 section.homepage-slider,
@@ -109,45 +91,6 @@ section.header_text{
 	font-size:16px;
 	line-height:30px;
 	border-bottom:1px solid #fff;
-}
-section.homepage-slider{
-	border-bottom:1px dotted #eb4800;
-	padding-bottom:1px;
-	position: relative;
-	top:0;
-	z-index:99;
-	border-bottom:2px solid #ddd;	
-	background-color:#efeeed;
-	min-height:100px;
-}
-section.homepage-slider div.intro{
-	position:absolute;
-	top:20%;
-	left:7%;
-	opacity:.7;
-}
-section.homepage-slider h1{
-	background-color:#eb4800;
-	color:#fff;
-	padding:2px 7px;
-	font-size:30px;
-	text-transform:uppercase;
-	float:left;
-	width:auto;
-}
-section.homepage-slider p{
-	overflow:hidden;
-	width:100%;
-	margin-bottom:2px;
-}
-section.homepage-slider span{
-	background-color:#fff;
-	color:#000;	
-	padding:2px 10px;
-	line-height:30px;
-	font-size:28px;
-	float:left;
-	width:auto;
 }
 section.header_text.sub{
 	font-size:14px;
@@ -272,123 +215,6 @@ section.navbar{
 	line-height:17px;
 	text-transform: none;
 }
-#menu > ul{
-    display: block;
-    margin-left:0;	
-}
-#menu > ul > li{
-    list-style: none;
-    float: left;
-    position: relative;   
-	margin-right: 0px;
-}
-#menu > ul > li > a {
-	font-size: 11px;
-	color: #111;
-	display: block;
-	text-transform: uppercase;
-	font-weight: bold;
-	text-align: center;
-	padding: 10px 14px;
-	}
-#menu > ul > li.active{
-	background-color:#eb4800;
-}
-#menu > ul > li.active > div{
-	color:#fff;
-}
-#menu > ul a:hover{
-	color: #eb4800; 
-	text-decoration:none;
-}
-#menu .current{color: #eb4800 !important;}
-
-#menu ul ul {
-    background: none repeat scroll 0 0 #eee;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-    padding: 0px;
-    position: absolute;
-    min-width:170px;
-	display:none;
-}
-#menu > ul > li > ul{
-    margin-left:10px;
-    margin-top:-12px;
-	border:1px solid #ddd;
-	border-top:0;
-}
-#menu ul ul li {
-    list-style: none outside none;
-    position: relative;
-	border-top:1px solid #fff;
-	border-bottom:1px solid #ddd;
-}
-#menu ul ul li:last-child{
-    border-bottom: none !important
-}
-#menu ul ul li.menu-last{border-bottom: none;}
-#menu ul ul div{
-    display: block;
-    padding:7px 10px;
-    color: #333;
-    font-size: 12px;
-}
-#menu ul ul a:hover,#menu > ul > li:hover > div{color: #fff;background-color:#eb4800}
-#menu ul ul a:hover{background-color:#eb4800;}
-#menu > ul > li:hover {visibility: inherit;}
-#menu li:hover {visibility: inherit;}
-#menu li:hover ul,
-#menu li.sfHover ul {
-    left: -10px;
-    top: 52px;
-    z-index: 2299;
-}
-#menu li li:hover ul,
-#menu li li.sfHover ul {
-    left: 130px;
-    top: 0px;
-}
-#menu li.sfHover > div{
-	color:#eb4800;
-}
-#menu .sf-sub-indicator{
-	display:none;
-}
-/* feature box
------------------------------------------------------------------------------ */
-.feature_box{
-	margin-bottom:20px;	
-}
-.feature_box h4{
-	margin:0 0 10px 0;
-	font-weight:normal;	
-}
-.feature_box img{	
-	margin-bottom:10px;
-	background-color:#eb4800;
-	padding:25px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;	
-	border-radius: 50%;
-}
-.feature_box .service{	
-	margin-top:3px;
-	padding:3px;	
-	text-align:center;
-}
-.feature_box .service:hover{
-	background-color:#f4f4f4;
-}
-.feature_box .service:hover img{
-	-webkit-transition: all 0.7s linear;
-	-webkit-transform: rotate(6.28rad);
-	transition: all 0.7s;
-	transform: rorate(6.28rad);
-}
-.feature_box .service div{	
-	padding:5px 5px 0 5px;
-}
-/* end feature box */
 
 /* product box
 ----------------------------------------------------------------------------- */
@@ -401,14 +227,6 @@ section.navbar{
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	border-bottom:1px solid #eee;
-}
-.product-box span.sale_tag {
-	height: 54px;
-	position: absolute;
-	width: 55px;
-	z-index: 100;
-	top:0;
-	left:0;
 }
 .product-box:hover{
 	background-color:#eb4800;
@@ -446,6 +264,9 @@ section.navbar{
     color: -webkit-link;
     cursor: pointer;
     text-decoration: underline;
+}
+.thumbnails.small {
+	margin-top: 10px;
 }
 /* end product box */
 
@@ -498,156 +319,6 @@ h4.title .button:hover{
 }
 /* end h4 title style */
 
-/* our clients
------------------------------------------------------------------------------ */
-section.our_client{
-	margin-top:20px;
-}
-section.our_client .row{
-	text-align:center;
-}
-/* end our clients */
-.search_form {
-	margin-bottom:0;
-}
-.search_form input{
-	background: url(../images/search.png) #fff no-repeat 97% 6px;
-	color:#fff;
-	text-shadow:none;
-	padding-right:25px;	
-	border:1px solid #eee;
-}
-#homeTab{
-	min-height:210px;
-}
-#homeTab li{
-	font-size:11px;
-}
-#homeTab li.active{
-	font-weight:bold;
-}
-#homeTab li.active a{
-	border-top:3px solid #ddd;
-}
-
-/* Product Detail
------------------------------------------------------------------------------ */
-.thumbnails.small {
-	margin-top: 10px;
-}
-/* end Product Detail */
-
-/* Block 
------------------------------------------------------------------------------ */
-.block {
-	text-align: center;
-	padding: 7px;
-	border: 1px solid #ddd;
-	border-top: 3px solid #eb4800;
-	-moz-box-shadow: 0 0 3px 0 #ccc;
-	-webkit-box-shadow: 0 0 3px 0 #ccc;
-	box-shadow: 0 0 3px 0 #ccc;
-	margin-bottom: 20px;
-}
-.small-product {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.small-product li {
-	text-align: left;
-	border-bottom: 1px dotted #eee;
-	padding: 5px 0;
-	font-size:11px;
-}
-.small-product li img {
-	width: 50px;
-}
-.block .carousel{
-	margin-bottom:-30px;
-}
-.block h4{
-	background: url(../images/bg_h.png) no-repeat bottom left;
-	margin: 0 0 20px 0;
-	border-bottom:1px solid #eee;	
-}
-/* end Block */
-
-/* Navigation list */
-.nav-header{
-	color:#333;
-	background: url(../images/bg_h.png) no-repeat bottom left;
-	margin-bottom:10px;
-}
-.nav-list li{
-	text-align:left;
-}
-.nav-list li div{
-	background: url(../images/trigger_right.png) transparent no-repeat 5px 8px;
-}
-.nav-list > .active > a, .nav-list > .active > a:hover{
-	background-color: transparent;
-	color:#eb4800;
-	text-shadow: none;	
-	font-weight: bold;
-}
-
-div:hover{
-	background-color: transparent;
-	color:#eb4800;
-	text-shadow: none;
-}
-
-/* Toogle Menu
------------------------------------------------------------------------------ */
-._toggleMenu{
-	margin:0 -10px;
-	display:none;
-	background:#eb4800;	
-}
-._toggleMenu div{
-	color:#fff;
-	text-indent:10px;
-	padding:5px 0;
-	display:block;
-	width:100%;
-}
-._toggleMenu ul  > li{
-	text-transform:uppercase;
-}
-._toggleMenu ul  > li > ul > li{
-	text-transform:none;
-}
-._toggleMenu a:hover{
-	color:#fff;
-	background-color:#df403d !important;
-}
-._toggleMenu .nav {
-	margin:0;
-	padding:0;
-}
-.toggleMenu {
-	display:block;
-	width:100%;    
-    padding:10px 0;
-	text-align:center;	
-	font-weight:bold;
-	background:url(../images/i_submenu.png) no-repeat 98% center;
-}
-._toggleMenu ul  > li a.parent{
-	background:url(../images/i_plus.png) no-repeat 98% center;
-}
-._toggleMenu .nav  ul{
-	list-style: none;
-	display:none;
-}
-._toggleMenu .nav  ul ul{
-	text-transform:none !important;
-}
-._toggleMenu .nav > li.hover > ul {
-    display:block;
-}
-
 /* Responsive
 ----------------------------------------------------------------------------- */
 @media (max-width: 767px){	
@@ -657,14 +328,11 @@ div:hover{
 	.navbar-inner.main-menu{
 		border-bottom:0 !important;
 	}
-	section.homepage-slider{
-		display:none;
-	}
 	.account.pull-right{
 		width:100%;
 		text-align:center;
 	}
-	.myCarousel .thumbnails li{
+	.thumbnails li{
 		border-bottom:1px solid #eee;
 		margin-bottom:0;
 	}
